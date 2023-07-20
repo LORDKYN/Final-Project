@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/main.css">
+  <script src="./assets/js/main.js" defer></script>
+  <title>Final Project</title>
+</head>
+
+<body>
+  <div class=" d-flex main-container ">
+    <div class="blur w-100">
+      <div class="row m-auto nav mt-4 container">
+        <nav class="navbar navbar-expand-lg bg-transparent c-nav ">
+          <div class="container-fluid">
+            <a class="navbar-brand text-warning link-btn" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active text-light link-btn " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light link-btn" href="#">Link</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input class="form-control me-2 bg-black PH" type="search" placeholder="Search Here ..."
+                  aria-label="Search" />
+                <button class="btn btn-outline-warning text-light c-btn" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div
+        class="row  w-100 d-flex flex-column justify-content-between align-items-center position-relative custom-pos">
+
+        <div class="col-md-10 col-sm-12">
+
+
+          <div class="row main d-flex justify-content-evenly align-items-center">
+            <div id="dynamicDiv" class="categories">
+              <!-- dynamic On Js-->
+            </div>
+
+
+          </div>
+          <div class="bg">
+            <div class="row footer c-footer mt-2 d-flex justify-content-evenly p-6">
+              <div class="col-md-4  d-flex flex-column justify-content-between">
+                <div class="row">
+                  <div class="col-md-6">
+                    <h2>GK</h2>
+                  </div>
+
+                </div>
+                <div class="row d-flex align-items-center">
+                  <div class="col-md-10 d-flex align-items-center"><span class="d-inline w-50 mobile">For Contact :
+                    </span>
+                    <button class=" btn text-light d-inline mobile-hover" id="mobile"
+                      value="+989366028094" >+989366028094</button></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">all rights reserved <span>&#169</span></div>
+                </div>
+              </div>
+              <div class="col-md-8 d-flex align-items-center">
+                <div class="row d-flex justify-content-between w-100">
+                  <div class="col-md-4"> <a class="btn text-light" href="#">login</a></div>
+                  <div class="col-md-4"> <a class="btn text-light" href="#">signUp</a></div>
+                  <div class="col-md-4"> <a class="btn text-light" href="#">blogs</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div id="blur" class="w-100 c-blur position-absolute vh-100"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

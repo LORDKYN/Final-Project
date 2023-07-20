@@ -1,0 +1,223 @@
+.c-navbar {
+  border: 1px solid rgba(156, 156, 156, 0.499);
+  border-radius: 40px;
+  box-shadow: 0 1px 5px rgba(156, 156, 156, 0.499);
+  height: 80px;
+}
+.c-navbar a {
+  text-decoration: none;
+}
+.c-navbar .active-btn {
+  text-shadow: 0 0 30px rgba(246, 80, 196, 0.9);
+}
+.c-navbar .searchBar:focus {
+  box-shadow: 0 0 12px rgba(246, 80, 196, 0.9) !important;
+}
+
+.PH {
+  background-color: rgba(244, 244, 244, 0) !important;
+}
+
+.PH::placeholder {
+  color: #ffc107 !important;
+}
+
+.PH:focus {
+  border-color: #eee8aa !important;
+  box-shadow: 0 0 10px rgba(238, 232, 170, 0.767);
+  background-color: rgba(255, 108, 103, 0.537254902) !important;
+}
+
+.c-nav {
+  border-radius: 40px;
+  padding: 20px;
+  z-index: 6;
+  backdrop-filter: blur(5px) !important;
+}
+
+@font-face {
+  font-family: "gotham";
+  src: url(../fonts/gotham/Gotham-Black.otf) format(truetype);
+  src: url(../fonts/gotham/Gotham-Black.woff) format(woff);
+  src: url(../fonts/gotham/Gotham-Black.woff2) format(woff2);
+}
+.c-footer {
+  text-shadow: 0 0 10px rgba(255, 108, 103, 0.8941176471);
+  padding: 30px;
+  min-height: 29vh;
+  color: #ffc107 !important;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 40px !important;
+  z-index: 6 !important;
+  position: relative !important;
+  margin: 0;
+}
+
+.bg {
+  background-color: rgba(0, 0, 0, 0.463) !important;
+  border-radius: 40px;
+}
+
+.mobile-hover:hover {
+  color: #ffc107 !important;
+}
+
+@media screen and (max-width: 1077px) {
+  .c-footer {
+    margin-top: 100px;
+  }
+}
+* {
+  text-transform: capitalize !important;
+  color: rgb(255, 255, 255);
+}
+
+body {
+  font-family: "gotham";
+  background: url(../images/kajetan-powolny-G6knoBTuuVM-unsplash.jpg);
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 1500px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.main-container {
+  margin: 0;
+  height: 100vh;
+  z-index: 0;
+}
+
+.blur {
+  background-color: rgba(39, 42, 44, 0.3490196078);
+  height: 100vh;
+  z-index: 1;
+}
+
+.c-modal {
+  z-index: 6;
+}
+
+.c-modal-2 {
+  z-index: 10;
+}
+
+.c-blur {
+  z-index: 5;
+  padding: 0 !important;
+}
+
+.c-blur-hover {
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  box-shadow: 0 0 40px rgba(255, 108, 103, 0.537254902) !important;
+  width: 90vw;
+  height: 400px;
+}
+
+.z-index-after-hover {
+  z-index: -1;
+}
+
+.c-btn:hover {
+  color: black !important;
+}
+
+.link-btn:hover {
+  color: rgba(255, 108, 103, 0.537254902) !important;
+}
+
+.main {
+  z-index: 2;
+  height: 70vh;
+}
+
+.footer {
+  z-index: 2;
+}
+
+.blog-items {
+  padding-left: 0 !important;
+}
+
+.blog-item {
+  margin: auto;
+  min-width: 200px;
+  background-color: rgba(255, 193, 7, 0.1058823529);
+  backdrop-filter: blur(4px);
+  border-radius: 25px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.537254902);
+  list-style: none;
+  width: 350px;
+  height: 350px;
+  transition: all 3s ease-in-out;
+}
+
+.blog-item:hover {
+  background-color: rgba(255, 108, 103, 0.4);
+}
+
+.image {
+  border-radius: 20px;
+  width: 280px;
+  height: 200px;
+  object-fit: cover !important;
+}
+
+.hover {
+  scale: 1;
+  backdrop-filter: blur(4px);
+  transition: all 0.2s ease-in-out;
+}
+
+.hover:hover {
+  scale: 1.1;
+  backdrop-filter: none !important;
+}
+
+.custom-pos {
+  top: 100px;
+  margin: 0;
+}
+
+.full-page {
+  width: 98.4vw !important;
+  height: 100vh !important;
+  scroll-behavior: none;
+  border-radius: 0%;
+}
+
+@media screen and (max-width: 1170px) {
+  .c-blur-hover {
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: 0 0 40px rgba(255, 108, 103, 0.537254902) !important;
+    width: 90vw;
+    height: 800px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .blog-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .blog-item {
+    margin: 50px 0;
+  }
+  .custom-pos {
+    top: 200px;
+  }
+  .c-blur-hover {
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: 0 0 40px rgba(255, 108, 103, 0.537254902) !important;
+    width: 90vw;
+    height: 1400px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

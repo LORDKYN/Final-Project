@@ -1,0 +1,184 @@
+@import './header-main.scss', './font.scss' , './footer.scss';
+
+* {
+    text-transform: capitalize !important;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: 'gotham';
+    background: url(../images/kajetan-powolny-G6knoBTuuVM-unsplash.jpg);
+    background-attachment: fixed;
+    background-repeat: repeat;
+    background-size: 1500px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.main-container {
+    margin: 0;
+    height: 100vh;
+    z-index: 0;
+}
+
+.blur {
+    background-color: #272a2c59;
+    height: 100vh;
+    z-index: 1;
+}
+
+.c-modal {
+    z-index: 6;
+}
+
+.c-modal-2 {
+    z-index: 10;
+}
+
+.c-blur {
+    z-index: 5;
+    padding: 0 !important;
+}
+
+.c-blur-hover {
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: 0 0 40px #ff6c6789 !important;
+    width: 90vw;
+    height: 400px;
+}
+
+.z-index-after-hover {
+    z-index: -1;
+}
+
+.c-btn:hover {
+    color: black !important;
+}
+
+.link-btn:hover {
+    color: #ff6c6789 !important;
+
+
+}
+
+.main {
+    z-index: 2;
+    height: 70vh;
+}
+
+.footer {
+    z-index: 2;
+}
+
+.blog-items{
+    padding-left: 0 !important; 
+}
+.blog-item {
+    margin: auto;
+    min-width: 200px;
+    background-color: #ffc1071b;
+    backdrop-filter: blur(4px);
+    border-radius: 25px;
+    box-shadow: 0 0 30px #00000089;
+    list-style: none;
+    width: 350px;
+    height: 350px;
+    transition: all 3s ease-in-out;
+
+
+}
+
+.blog-item:hover {
+    background-color: #ff6c6766;
+    
+
+}
+
+.image {
+
+    border-radius: 20px;
+    width: 280px;
+    height: 200px;
+    object-fit: cover !important;
+}
+
+.hover {
+    scale: 1;
+    backdrop-filter: blur(4px);
+    transition: all 0.2s ease-in-out;
+}
+
+.hover:hover {
+    scale: 1.1;
+    backdrop-filter: none !important;
+}
+
+.custom-pos {
+    top: 100px;
+    margin: 0;
+}
+
+
+.full-page {
+
+    width: 98.4vw !important;
+    height: 100vh !important;
+    scroll-behavior: none;
+    border-radius: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1170px) {
+    .c-blur-hover {
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        box-shadow: 0 0 40px #ff6c6789 !important;
+        width: 90vw;
+        height: 800px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .blog-items {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .blog-item {
+        margin: 50px 0;
+    }
+
+    .custom-pos {
+        top: 200px;
+    }
+
+    .c-blur-hover {
+
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        box-shadow: 0 0 40px #ff6c6789 !important;
+        width: 90vw;
+        height: 1400px;
+    }
+}

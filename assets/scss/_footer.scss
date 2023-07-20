@@ -1,0 +1,29 @@
+.c-footer{
+    text-shadow: 0 0 10px #ff6c67e4;
+    padding: 30px;
+    min-height: 29vh;
+    color: #ffc107 !important;
+    background-color: transparent ;
+    backdrop-filter: blur(5px);
+    border-radius: 40px !important;
+    z-index: 6 !important;
+    position: relative !important;
+    margin: 0;
+}
+.bg{
+    background-color: rgba(0, 0, 0, 0.463) !important;
+    border-radius: 40px;
+}
+
+.mobile-hover:hover{
+    color: #ffc107 !important;
+}
+
+
+
+
+@media screen and ( max-width:1077px) {
+    .c-footer{
+        margin-top: 100px;
+    }
+}

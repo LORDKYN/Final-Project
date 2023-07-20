@@ -1,0 +1,42 @@
+$shadow-color : rgba(156, 156, 156, 0.499);
+$text-color : rgb(200, 200, 200);
+$btn-active-color : rgba(246, 80, 196, 0.9);
+.c-navbar {
+    border: 1px solid $shadow-color;
+    border-radius:40px;
+    box-shadow: 0 1px 5px $shadow-color ;
+    height: 80px;
+    a {
+        text-decoration: none;
+        
+    }
+    .active-btn {
+        text-shadow: 0 0 30px rgba(246, 80, 196, 0.9);
+        
+    }
+    .searchBar:focus{
+            box-shadow: 0 0 12px $btn-active-color !important;
+        }
+    
+}
+.PH {
+    background-color: #f4f4f400 !important;
+}
+
+.PH::placeholder{
+    color: #ffc107 !important;
+}
+.PH:focus{
+    border-color: #eee8aa !important;
+    box-shadow: 0 0 10px rgba(238, 232, 170, 0.767);
+    background-color: #ff6c6789 !important;
+    
+}
+.c-nav{
+    border-radius: 40px;
+    padding: 20px;
+    z-index: 6;
+    backdrop-filter: blur(5px) !important;
+}
+
+
